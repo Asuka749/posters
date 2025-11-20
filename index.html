@@ -12,38 +12,62 @@
       padding: 20px;
     }
 
-    /* 统一所有内容的宽度 */
+    /* 外层容器：可以更大 */
     .container {
-      width: 100%;
-      max-width: 540px;   /* 与 Instagram 最大宽度一致 */
-      margin: 0 auto 40px auto; /* 居中 + 下间距 */
+      width: 95vw;        /* 占屏幕 95% */
+      max-width: 900px;   /* 可自定义最大宽度 */
+      margin: 0 auto 40px auto;
     }
 
-    /* 海报图片 */
+    /* 海报图：自动放大 */
     .poster {
       width: 100%;
       height: auto;
       border: 2px solid white;
       border-radius: 8px;
     }
+
+    /* Instagram 视频的容器 */
+    .ig-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 120%; /* Instagram 高宽比，大约 1.2:1，可调 */
+      overflow: hidden;
+    }
+
+    /* 强制放大 Instagram embed */
+    .ig-embed {
+      transform: scale(1.5);      /* 放大倍数，可调 */
+      transform-origin: top left;
+      width: 67%;                 /* 1 / 1.5 = 0.67，用来校正缩放 */
+      height: 67%;
+    }
+
+    @media (max-width: 600px) {
+      .ig-embed {
+        transform: scale(1.0);  /* 手机不放大 */
+        width: 100%;
+        height: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- 海报容器 -->
+  <!-- 海报 -->
   <div class="container">
     <img class="poster"
          src="https://raw.githubusercontent.com/Asuka749/posters/main/LOSS-ONCE%20YOU...png" 
          alt="Poster Image">
   </div>
 
-  <!-- Instagram 视频容器 -->
-  <div class="container">
+  <!-- Instagram 视频（强制放大版） -->
+  <div class="container ig-wrapper">
     <blockquote 
-      class="instagram-media" 
+      class="instagram-media ig-embed"
       data-instgrm-permalink="https://www.instagram.com/reel/DO3q_yHjIpy/"
       data-instgrm-version="14"
-      style="background:#111; border:0; margin:0 auto; width:100%;">
+      style="background:#111; border:0; margin:0; width:100%;">
     </blockquote>
   </div>
 
