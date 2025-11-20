@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- 这一行非常重要：让手机按设备宽度来排版 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <style>
     body {
@@ -9,14 +11,15 @@
       background: #111;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 16px;
+      margin: 0;
     }
 
-    /* 统一内容宽度：和 Instagram 最大宽度一致 */
+    /* 统一内容宽度 */
     .container {
       width: 100%;
-      max-width: 540px;     /* Instagram embed 的最大宽度 */
-      margin: 0 auto 24px;  /* 居中 + 元素之间留一点间距 */
+      max-width: 540px;       /* 和 Instagram 最大宽度一致 */
+      margin: 0 auto 16px;    /* 居中 + 控制上下间距 */
     }
 
     /* 海报图片 */
