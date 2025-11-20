@@ -11,29 +11,41 @@
       text-align: center;
       padding: 20px;
     }
-    img {
+
+    /* 统一所有内容的宽度 */
+    .container {
       width: 100%;
-      max-width: 540px; /* 与 Instagram 视频宽度对齐 */
+      max-width: 540px;   /* 与 Instagram 最大宽度一致 */
+      margin: 0 auto 40px auto; /* 居中 + 下间距 */
+    }
+
+    /* 海报图片 */
+    .poster {
+      width: 100%;
       height: auto;
       border: 2px solid white;
       border-radius: 8px;
-      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Poster 图片 -->
-  <img src="https://raw.githubusercontent.com/Asuka749/posters/main/LOSS-ONCE%20YOU...png" 
-       alt="Poster Image">
+  <!-- 海报容器 -->
+  <div class="container">
+    <img class="poster"
+         src="https://raw.githubusercontent.com/Asuka749/posters/main/LOSS-ONCE%20YOU...png" 
+         alt="Poster Image">
+  </div>
 
-  <!-- Instagram 视频嵌入 -->
-  <blockquote 
-    class="instagram-media" 
-    data-instgrm-permalink="https://www.instagram.com/reel/DO3q_yHjIpy/"
-    data-instgrm-version="14" 
-    style="background:#111; border:0; margin:20px auto; max-width:540px; width:100%;">
-  </blockquote>
+  <!-- Instagram 视频容器 -->
+  <div class="container">
+    <blockquote 
+      class="instagram-media" 
+      data-instgrm-permalink="https://www.instagram.com/reel/DO3q_yHjIpy/"
+      data-instgrm-version="14"
+      style="background:#111; border:0; margin:0 auto; width:100%;">
+    </blockquote>
+  </div>
 
   <script async src="https://www.instagram.com/embed.js"></script>
 
