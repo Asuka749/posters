@@ -12,43 +12,20 @@
       padding: 20px;
     }
 
-    /* 外层容器：可以更大 */
+    /* 统一内容宽度：和 Instagram 最大宽度一致 */
     .container {
-      width: 95vw;        /* 占屏幕 95% */
-      max-width: 900px;   /* 可自定义最大宽度 */
-      margin: 0 auto 40px auto;
+      width: 100%;
+      max-width: 540px;     /* Instagram embed 的最大宽度 */
+      margin: 0 auto 24px;  /* 居中 + 元素之间留一点间距 */
     }
 
-    /* 海报图：自动放大 */
+    /* 海报图片 */
     .poster {
       width: 100%;
       height: auto;
       border: 2px solid white;
       border-radius: 8px;
-    }
-
-    /* Instagram 视频的容器 */
-    .ig-wrapper {
-      position: relative;
-      width: 100%;
-      padding-top: 120%; /* Instagram 高宽比，大约 1.2:1，可调 */
-      overflow: hidden;
-    }
-
-    /* 强制放大 Instagram embed */
-    .ig-embed {
-      transform: scale(1.5);      /* 放大倍数，可调 */
-      transform-origin: top left;
-      width: 67%;                 /* 1 / 1.5 = 0.67，用来校正缩放 */
-      height: 67%;
-    }
-
-    @media (max-width: 600px) {
-      .ig-embed {
-        transform: scale(1.0);  /* 手机不放大 */
-        width: 100%;
-        height: 100%;
-      }
+      display: block;
     }
   </style>
 </head>
@@ -61,13 +38,13 @@
          alt="Poster Image">
   </div>
 
-  <!-- Instagram 视频（强制放大版） -->
-  <div class="container ig-wrapper">
+  <!-- Instagram 视频 -->
+  <div class="container">
     <blockquote 
-      class="instagram-media ig-embed"
+      class="instagram-media"
       data-instgrm-permalink="https://www.instagram.com/reel/DO3q_yHjIpy/"
       data-instgrm-version="14"
-      style="background:#111; border:0; margin:0; width:100%;">
+      style="background:#111; border:0; margin:0 auto; width:100%; max-width:540px;">
     </blockquote>
   </div>
 
