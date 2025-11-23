@@ -18,11 +18,11 @@
     /* 统一内容宽度 */
     .container {
       width: 100%;
-      max-width: 540px;       /* 和海报最大宽度一致 */
-      margin: 0 auto 16px;    /* 居中 + 控制上下间距 */
+      max-width: 540px;
+      margin: 0 auto 16px;
     }
 
-    /* 海报图片 */
+    /* 图片样式 */
     .poster {
       width: 100%;
       height: auto;
@@ -31,11 +31,11 @@
       display: block;
     }
 
-    /* “视频”容器：保持 16:9 比例，自适应缩放 */
+    /* 视频框架统一样式 */
     .video-wrapper {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%; /* 16:9 比例，高度=宽度*9/16 */
+      padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       border-radius: 8px;
@@ -57,11 +57,11 @@
   <!-- 海报 -->
   <div class="container">
     <img class="poster"
-         src="https://raw.githubusercontent.com/Asuka749/posters/main/Freedom-WhatMakesUsHuman/Susie%20Alegre%20.png"
+         src="https://raw.githubusercontent.com/Asuka749/posters/main/Freedom-WhatMakesUsHuman/Susie%20Alegre.png"
          alt="Poster Image">
   </div>
 
-  <!-- EdBookFest 页面当作“视频区域”嵌入 -->
+  <!-- EdBookFest 页面嵌入 -->
   <div class="container">
     <div class="video-wrapper">
       <iframe
