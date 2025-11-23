@@ -11,21 +11,63 @@
       padding: 0;
       background: #111;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
+
+    .container {
+      width: 100%;
+      max-width: 540px;
+      margin-bottom: 16px;
+    }
+
     img {
       width: 100%;
       height: auto;
       display: block;
+      border: 2px solid white;
+      border-radius: 8px;
     }
+
+    /* Facebook 封面容器 */
+    .fb-cover {
+      position: relative;
+      display: block;
+      cursor: pointer;
+    }
+
+    /* 播放按钮 */
+    .fb-cover::after {
+      content: "▶";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: white;
+      text-shadow: 0 0 8px rgba(0,0,0,0.8);
+      pointer-events: none;
+    }
+
   </style>
 </head>
 <body>
 
-  <img src="https://raw.githubusercontent.com/Asuka749/posters/main/hope-TheEndoftheTimes/6.png
+  <!-- 海报 -->
+  <div class="container">
+    <img
+      src="https://raw.githubusercontent.com/Asuka749/posters/main/anger-ResistanceFormattheWomen%E2%80%99sPhotographyAgency/12.png"
+      alt="Poster">
+  </div>
 
-
-" alt="poster">
+  <!-- Facebook 封面（点击跳转播放） -->
+  <div class="container">
+    <a href="https://www.facebook.com/nationalgalleriesscot/videos/811154047957363/" target="_blank" class="fb-cover">
+      <img
+        src="https://raw.githubusercontent.com/Asuka749/posters/main/anger-ResistanceFormattheWomen%E2%80%99sPhotographyAgency/cover.png"
+        alt="Facebook Video Cover">
+    </a>
+  </div>
 
 </body>
 </html>
