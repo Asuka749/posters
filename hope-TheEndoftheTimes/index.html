@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poster</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 540px; /* same width as poster */
+      margin-bottom: 16px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      border: 2px solid white;
+    }
+
+    .fb-video-cover {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .fb-video-cover::after {
+      content: "▶";
+      font-size: 48px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 海报 -->
+  <div class="container">
+    <img src="https://raw.githubusercontent.com/Asuka749/posters/main/hope-TheEndoftheTimes/6.png" alt="poster">
+  </div>
+
+  <!-- Facebook 视频封面（点击跳转播放） -->
+  <div class="container">
+    <a href="https://www.facebook.com/watch/?v=371209622685815" target="_blank">
+      <img class="fb-video-cover"
+           src="https://raw.githubusercontent.com/Asuka749/posters/main/hope-TheEndoftheTimes/6.png"
+           alt="Facebook Video">
+    </a>
+  </div>
+
+</body>
+</html>
