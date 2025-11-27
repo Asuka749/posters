@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- 这一行非常重要：让手机按设备宽度来排版 -->
+  <!-- This line is essential: ensures layout adapts to mobile screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <style>
@@ -15,14 +15,14 @@
       margin: 0;
     }
 
-    /* 统一内容宽度 */
+    /* Unified content width */
     .container {
       width: 100%;
-      max-width: 540px;       /* 和海报最大宽度一致 */
-      margin: 0 auto 16px;    /* 居中 + 控制上下间距 */
+      max-width: 540px;       /* Same max width as poster */
+      margin: 0 auto 16px;    /* Center + vertical spacing */
     }
 
-    /* 海报图片 */
+    /* Poster image */
     .poster {
       width: 100%;
       height: auto;
@@ -31,18 +31,18 @@
       display: block;
     }
 
-    /* 视频容器：保持 16:9 比例，自适应缩放 */
+    /* Video container: keeps 16:9 aspect ratio, fully responsive */
     .video-wrapper {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%; /* 16:9 比例 */
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
       height: 0;
       overflow: hidden;
       border-radius: 8px;
       border: 2px solid white;
     }
 
-    /* TikTok iframe */
+    /* TikTok / iframe embed */
     .video-wrapper iframe {
       position: absolute;
       top: 0;
@@ -55,15 +55,14 @@
 </head>
 <body>
 
-  <!-- 海报 -->
+  <!-- Poster -->
   <div class="container">
     <img class="poster"
-         src="https://raw.githubusercontent.com/Asuka749/posters/main/Freedom-Bedsheets/BEDSHEETS.png
-"
+         src="https://raw.githubusercontent.com/Asuka749/posters/main/Freedom-Bedsheets/BEDSHEETS.png"
          alt="Poster Image">
   </div>
 
-  <!-- TikTok 视频 -->
+  <!-- TikTok Video -->
   <div class="container">
     <div class="video-wrapper">
       <iframe 
@@ -76,4 +75,3 @@
 
 </body>
 </html>
-
