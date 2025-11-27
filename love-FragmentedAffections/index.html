@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- 这一行非常重要：让手机按设备宽度来排版 -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poster</title>
 
@@ -16,14 +16,14 @@
       margin: 0;
     }
 
-    /* 内容统一宽度 */
+
     .container {
       width: 100%;
       max-width: 540px;
       margin: 0 auto 16px;
     }
 
-    /* 海报 */
+
     .poster {
       width: 100%;
       height: auto;
@@ -32,14 +32,14 @@
       display: block;
     }
 
-    /* Vimeo 封面容器 */
+
     .vimeo-cover {
       position: relative;
       display: block;
       cursor: pointer;
     }
 
-    /* Vimeo 封面图 */
+
     .vimeo-thumb {
       width: 100%;
       height: auto;
@@ -48,7 +48,7 @@
       display: block;
     }
 
-    /* 播放按钮 */
+
     .vimeo-cover::after {
       content: "▶";
       position: absolute;
@@ -64,14 +64,14 @@
 </head>
 <body>
 
-  <!-- 海报 -->
+
   <div class="container">
     <img class="poster"
          src="https://raw.githubusercontent.com/Asuka749/posters/main/love-FragmentedAffections/1.png"
          alt="Poster Image">
   </div>
 
-  <!-- Vimeo 封面（点击跳转播放） -->
+
   <div class="container">
     <a href="https://vimeo.com/1109925457" target="_blank" class="vimeo-cover">
       <img class="vimeo-thumb"
@@ -82,3 +82,4 @@
 
 </body>
 </html>
+
