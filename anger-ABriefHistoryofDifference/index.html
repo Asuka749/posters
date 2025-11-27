@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- 这一行非常重要：让手机按设备宽度来排版 -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <style>
@@ -15,14 +15,14 @@
       margin: 0;
     }
 
-    /* 统一内容宽度 */
+
     .container {
       width: 100%;
       max-width: 540px;       /* 和海报最大宽度一致 */
       margin: 0 auto 16px;    /* 居中 + 控制上下间距 */
     }
 
-    /* 海报图片 */
+
     .poster {
       width: 100%;
       height: auto;
@@ -31,13 +31,13 @@
       display: block;
     }
 
-    /* YouTube 封面容器 */
+
     .video-cover {
       position: relative;
       display: block;
     }
 
-    /* YouTube 封面图（和海报一样风格） */
+
     .video-thumb {
       width: 100%;
       height: auto;
@@ -46,7 +46,7 @@
       display: block;
     }
 
-    /* 中间的播放按钮图标 */
+
     .video-cover::after {
       content: "▶";
       position: absolute;
@@ -62,14 +62,14 @@
 </head>
 <body>
 
-  <!-- 海报 -->
+
   <div class="container">
     <img class="poster"
          src="https://raw.githubusercontent.com/Asuka749/posters/main/anger-ABriefHistoryofDifference/15.png"
          alt="Poster Image">
   </div>
 
-  <!-- YouTube 封面（点击后在新标签打开视频） -->
+
   <div class="container">
     <a href="https://www.youtube.com/watch?v=aPxvRl05Q1I" target="_blank" class="video-cover">
       <img class="video-thumb"
@@ -80,3 +80,4 @@
 
 </body>
 </html>
+
