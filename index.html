@@ -3,89 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <title>Posters Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* 全局样式 */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #222;
+    }
+
+    /* 整个页面内容容器 */
+    .page-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+
+    /* 顶部标题 */
+    .site-title {
+      text-align: center;
+      margin-bottom: 8px;
+      font-size: 28px;
+      letter-spacing: 0.03em;
+    }
+
+    .site-subtitle {
+      text-align: center;
+      margin: 0 0 32px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* 栅格布局：主题卡片 */
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    /* 每个主题卡片 */
+    .theme-card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 18px 18px 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .theme-title {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .theme-tagline {
+      margin: 0 0 12px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* 列表样式 */
+    .theme-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .theme-list li {
+      margin-bottom: 6px;
+    }
+
+    /* 链接样式 */
+    a {
+      text-decoration: none;
+      color: #0066cc;
+      border-bottom: 1px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+      word-break: break-word;
+    }
+
+    a:hover {
+      color: #003d80;
+      border-color: rgba(0, 102, 204, 0.4);
+    }
+
+    /* 顶部提示信息 */
+    .notice {
+      background: #fff4e5;
+      border-left: 4px solid #ffa726;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      margin-bottom: 24px;
+      color: #7a4b00;
+    }
+
+    /* 小屏幕微调 */
+    @media (max-width: 480px) {
+      .site-title {
+        font-size: 22px;
+      }
+      .page-wrapper {
+        padding: 20px 12px 32px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1 style="color:red;">HELLO FROM ROOT INDEX</h1>
-  <p>如果你看到这行字，说明 GitHub Pages 正常工作。</p>
+  <div class="page-wrapper">
+    <h1 class="site-title">Festival Emotion Posters</h1>
+    <p class="site-subtitle">Index of all NFC-linked poster pages · Loss · Love · Hope · Anger · Celebration · Dream · Freedom · Belonging</p>
 
-  <!-- LOSS -->
-  <h2>Loss 系列页面</h2>
-  <ul>
-    <li><a href="loss-InMemoriam/">loss-InMemoriam</a></li>
-    <li><a href="loss-OnceYouShallBeOneOfThoseWhoLivedLongAgo/">loss-OnceYouShallBeOneOfThoseWhoLivedLongAgo</a></li>
-    <li><a href="loss-SeedsofMemories/">loss-SeedsofMemories</a></li>
-    <li><a href="loss-oommoo/">loss-oommoo</a></li>
-    <li><a href="loss-oz/">loss-oz</a></li>
-  </ul>
+    <div class="notice">
+      If you can see this page, the website is running correctly. Tap an NFC tag (or use the links below) to open each poster page.
+    </div>
 
-  <!-- LOVE -->
-  <h2>Love 系列页面</h2>
-  <ul>
-    <li><a href="love-Edges/">love-Edges</a></li>
-    <li><a href="love-Forget-Me-Nots/">love-Forget-Me-Nots</a></li>
-    <li><a href="love-FragmentedAffections/">love-FragmentedAffections</a></li>
-    <li><a href="love-HereYouComeAgain/">love-HereYouComeAgain</a></li>
-    <li><a href="love-TheBlackHole/">love-TheBlackHole</a></li>
-  </ul>
+    <div class="themes-grid">
+      <!-- LOSS -->
+      <section class="theme-card">
+        <h2 class="theme-title">Loss Series</h2>
+        <p class="theme-tagline">Grief, memory, and trace.</p>
+        <ul class="theme-list">
+          <li><a href="loss-InMemoriam/">loss-InMemoriam</a></li>
+          <li><a href="loss-OnceYouShallBeOneOfThoseWhoLivedLongAgo/">loss-OnceYouShallBeOneOfThoseWhoLivedLongAgo</a></li>
+          <li><a href="loss-SeedsofMemories/">loss-SeedsofMemories</a></li>
+          <li><a href="loss-oommoo/">loss-oommoo</a></li>
+          <li><a href="loss-oz/">loss-oz</a></li>
+        </ul>
+      </section>
 
-  <!-- HOPE -->
-  <h2>Hope 系列页面</h2>
-  <ul>
-    <li><a href="hope-BernardineEvaristoOnNeverGivingUp/">hope-BernardineEvaristoOnNeverGivingUp</a></li>
-    <li><a href="hope-BrothersWarPoemsandChronicles/">hope-BrothersWarPoemsandChronicles</a></li>
-    <li><a href="hope-CalendarGirlstheMusical/">hope-CalendarGirlstheMusical</a></li>
-    <li><a href="hope-LookingIntotheAbyss/">hope-LookingIntotheAbyss</a></li>
-    <li><a href="hope-TheEndoftheTimes/">hope-TheEndoftheTimes</a></li>
-  </ul>
+      <!-- LOVE -->
+      <section class="theme-card">
+        <h2 class="theme-title">Love Series</h2>
+        <p class="theme-tagline">Attachment, care, and intimacy.</p>
+        <ul class="theme-list">
+          <li><a href="love-Edges/">love-Edges</a></li>
+          <li><a href="love-Forget-Me-Nots/">love-Forget-Me-Nots</a></li>
+          <li><a href="love-FragmentedAffections/">love-FragmentedAffections</a></li>
+          <li><a href="love-HereYouComeAgain/">love-HereYouComeAgain</a></li>
+          <li><a href="love-TheBlackHole/">love-TheBlackHole</a></li>
+        </ul>
+      </section>
 
-  <!-- ANGER -->
-  <h2>Anger 系列页面</h2>
-  <ul>
-    <li><a href="anger-ABriefHistoryofDifference/">anger-ABriefHistoryofDifference</a></li>
-    <li><a href="anger-BecomeaSexyRefugeeinFiveEasySteps!/">anger-BecomeaSexyRefugeeinFiveEasySteps!</a></li>
-    <li><a href="anger-NickItforMunich/">anger-NickItforMunich</a></li>
-    <li><a href="anger-ResistanceFormattheWomen’sPhotographyAgency/">anger-ResistanceFormattheWomen’sPhotographyAgency</a></li>
-    <li><a href="anger-WhoseBody/">anger-WhoseBody</a></li>
-  </ul>
+      <!-- HOPE -->
+      <section class="theme-card">
+        <h2 class="theme-title">Hope Series</h2>
+        <p class="theme-tagline">Future, resilience, and possibility.</p>
+        <ul class="theme-list">
+          <li><a href="hope-BernardineEvaristoOnNeverGivingUp/">hope-BernardineEvaristoOnNeverGivingUp</a></li>
+          <li><a href="hope-BrothersWarPoemsandChronicles/">hope-BrothersWarPoemsandChronicles</a></li>
+          <li><a href="hope-CalendarGirlstheMusical/">hope-CalendarGirlstheMusical</a></li>
+          <li><a href="hope-LookingIntotheAbyss/">hope-LookingIntotheAbyss</a></li>
+          <li><a href="hope-TheEndoftheTimes/">hope-TheEndoftheTimes</a></li>
+        </ul>
+      </section>
 
-  <!-- CELEBRATION -->
-  <h2>Celebration 系列页面</h2>
-  <ul>
-    <li><a href="celebration-20YearsoftheFreeFringeFestival–CharityGalaShow/">celebration-20YearsoftheFreeFringeFestival–CharityGalaShow</a></li>
-    <li><a href="celebration-FoxFest2025/">celebration-FoxFest2025</a></li>
-    <li><a href="celebration-ImprovWolves/">celebration-ImprovWolves</a></li>
-    <li><a href="celebration-TheComedyPatch/">celebration-TheComedyPatch</a></li>
-    <li><a href="celenration-FestivalFamilyEncounters2023/">celenration-FestivalFamilyEncounters2023</a></li>
-  </ul>
+      <!-- ANGER -->
+      <section class="theme-card">
+        <h2 class="theme-title">Anger Series</h2>
+        <p class="theme-tagline">Injustice, critique, and resistance.</p>
+        <ul class="theme-list">
+          <li><a href="anger-ABriefHistoryofDifference/">anger-ABriefHistoryofDifference</a></li>
+          <li><a href="anger-BecomeaSexyRefugeeinFiveEasySteps!/">anger-BecomeaSexyRefugeeinFiveEasySteps!</a></li>
+          <li><a href="anger-NickItforMunich/">anger-NickItforMunich</a></li>
+          <li><a href="anger-ResistanceFormattheWomen’sPhotographyAgency/">anger-ResistanceFormattheWomen’sPhotographyAgency</a></li>
+          <li><a href="anger-WhoseBody/">anger-WhoseBody</a></li>
+        </ul>
+      </section>
 
-  <!-- DREAM -->
-  <h2>Dream 系列页面</h2>
-  <ul>
-    <li><a href="dream-DreamSpace/">dream-DreamSpace</a></li>
-    <li><a href="dream-LEGO®BuildtheChange/">dream-LEGO®BuildtheChange</a></li>
-    <li><a href="dream-MisterEofImaginationEdgarAllanPoe/">dream-MisterEofImaginationEdgarAllanPoe</a></li>
-    <li><a href="dream-OutofCharacter/">dream-OutofCharacter</a></li>
-    <li><a href="dream-StorytellingYogawithRadhikaSanghani/">dream-StorytellingYogawithRadhikaSanghani</a></li>
-  </ul>
+      <!-- CELEBRATION -->
+      <section class="theme-card">
+        <h2 class="theme-title">Celebration Series</h2>
+        <p class="theme-tagline">Gathering, humour, and joy.</p>
+        <ul class="theme-list">
+          <li><a href="celebration-20YearsoftheFreeFringeFestival–CharityGalaShow/">celebration-20YearsoftheFreeFringeFestival–CharityGalaShow</a></li>
+          <li><a href="celebration-FoxFest2025/">celebration-FoxFest2025</a></li>
+          <li><a href="celebration-ImprovWolves/">celebration-ImprovWolves</a></li>
+          <li><a href="celebration-TheComedyPatch/">celebration-TheComedyPatch</a></li>
+          <li><a href="celenration-FestivalFamilyEncounters2023/">celenration-FestivalFamilyEncounters2023</a></li>
+        </ul>
+      </section>
 
-  <!-- FREEDOM -->
-  <h2>Freedom 系列页面</h2>
-  <ul>
-    <li><a href="Freedom-Bedsheets/">Freedom-Bedsheets</a></li>
-    <li><a href="Freedom-FreedomofExpressionTheLongView/">Freedom-FreedomofExpressionTheLongView</a></li>
-    <li><a href="Freedom-JosephEStiglitzTheRoadToFreedom/">Freedom-JosephEStiglitzTheRoadToFreedom</a></li>
-    <li><a href="Freedom-WhatMakesUsHuman/">Freedom-WhatMakesUsHuman</a></li>
-  </ul>
+      <!-- DREAM -->
+      <section class="theme-card">
+        <h2 class="theme-title">Dream Series</h2>
+        <p class="theme-tagline">Imagination, myth, and surreal scenes.</p>
+        <ul class="theme-list">
+          <li><a href="dream-DreamSpace/">dream-DreamSpace</a></li>
+          <li><a href="dream-LEGO®BuildtheChange/">dream-LEGO®BuildtheChange</a></li>
+          <li><a href="dream-MisterEofImaginationEdgarAllanPoe/">dream-MisterEofImaginationEdgarAllanPoe</a></li>
+          <li><a href="dream-OutofCharacter/">dream-OutofCharacter</a></li>
+          <li><a href="dream-StorytellingYogawithRadhikaSanghani/">dream-StorytellingYogawithRadhikaSanghani</a></li>
+        </ul>
+      </section>
 
-  <!-- BELONGING -->
-  <h2>Belonging 系列页面</h2>
-  <ul>
-    <li><a href="belonging-AnchorEventbyCWCandHavenforArtists/">belonging-AnchorEventbyCWCandHavenforArtists</a></li>
-    <li><a href="belonging-ArtistEventFringeCommunityDay/">belonging-ArtistEventFringeCommunityDay</a></li>
-    <li><a href="belonging-CommunityActionAgainstClimateChange/">belonging-CommunityActionAgainstClimateChange</a></li>
-    <li><a href="belonging-HavenforArtistsxArrayCollectiveOpeningProvocation/">belonging-HavenforArtistsxArrayCollectiveOpeningProvocation</a></li>
-    <li><a href="belonging-ustogetherkeepingittogether/">belonging-ustogetherkeepingittogether</a></li>
-  </ul>
+      <!-- FREEDOM -->
+      <section class="theme-card">
+        <h2 class="theme-title">Freedom Series</h2>
+        <p class="theme-tagline">Rights, autonomy, and open futures.</p>
+        <ul class="theme-list">
+          <li><a href="Freedom-Bedsheets/">Freedom-Bedsheets</a></li>
+          <li><a href="Freedom-FreedomofExpressionTheLongView/">Freedom-FreedomofExpressionTheLongView</a></li>
+          <li><a href="Freedom-JosephEStiglitzTheRoadToFreedom/">Freedom-JosephEStiglitzTheRoadToFreedom</a></li>
+          <li><a href="Freedom-WhatMakesUsHuman/">Freedom-WhatMakesUsHuman</a></li>
+        </ul>
+      </section>
 
+      <!-- BELONGING -->
+      <section class="theme-card">
+        <h2 class="theme-title">Belonging Series</h2>
+        <p class="theme-tagline">Community, place, and solidarity.</p>
+        <ul class="theme-list">
+          <li><a href="belonging-AnchorEventbyCWCandHavenforArtists/">belonging-AnchorEventbyCWCandHavenforArtists</a></li>
+          <li><a href="belonging-ArtistEventFringeCommunityDay/">belonging-ArtistEventFringeCommunityDay</a></li>
+          <li><a href="belonging-CommunityActionAgainstClimateChange/">belonging-CommunityActionAgainstClimateChange</a></li>
+          <li><a href="belonging-HavenforArtistsxArrayCollectiveOpeningProvocation/">belonging-HavenforArtistsxArrayCollectiveOpeningProvocation</a></li>
+          <li><a href="belonging-ustogetherkeepingittogether/">belonging-ustogetherkeepingittogether</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
