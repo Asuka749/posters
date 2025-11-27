@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- 这一行非常重要：让手机按设备宽度来排版 -->
+  <!-- This line is essential: ensures mobile devices scale the layout correctly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <style>
@@ -15,14 +15,14 @@
       margin: 0;
     }
 
-    /* 统一内容宽度 */
+    /* Unified content width */
     .container {
       width: 100%;
-      max-width: 540px;       /* 和海报最大宽度一致 */
-      margin: 0 auto 16px;    /* 居中 + 控制上下间距 */
+      max-width: 540px;       /* Matches the maximum width of the poster */
+      margin: 0 auto 16px;    /* Centered + vertical spacing */
     }
 
-    /* 海报图片 */
+    /* Poster image */
     .poster {
       width: 100%;
       height: auto;
@@ -31,11 +31,11 @@
       display: block;
     }
 
-    /* “视频”容器：保持 16:9 比例，自适应缩放 */
+    /* "Video" container: keeps 16:9 aspect ratio, automatically resizes */
     .video-wrapper {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%; /* 16:9 比例，高度=宽度*9/16 */
+      padding-bottom: 56.25%; /* 16:9 ratio, height = width * 9 / 16 */
       height: 0;
       overflow: hidden;
       border-radius: 8px;
@@ -54,15 +54,14 @@
 </head>
 <body>
 
-  <!-- 海报 -->
+  <!-- Poster -->
   <div class="container">
     <img class="poster"
-         src="https://raw.githubusercontent.com/Asuka749/posters/main/Freedom-JosephEStiglitzTheRoadToFreedom/The%20Road%20to%20Freedom.png
-"
+         src="https://raw.githubusercontent.com/Asuka749/posters/main/Freedom-JosephEStiglitzTheRoadToFreedom/The%20Road%20to%20Freedom.png"
          alt="Poster Image">
   </div>
 
-  <!-- EdBookFest 页面当作“视频区域”嵌入 -->
+  <!-- Embedding EdBookFest page as the "video section" -->
   <div class="container">
     <div class="video-wrapper">
       <iframe
@@ -74,4 +73,3 @@
 
 </body>
 </html>
-
